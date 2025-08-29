@@ -11,19 +11,6 @@ It provides a clean C++ header-only implementation, making it easy to integrate 
 
 ---
 
-## Detailed Documentations
-
-[examples](docs/examples.md)
----
-[src](docs/src.md)
----
-[algo](docs/algo.md)
----
-[data](docs/data.md)
----
-[utils](docs/utils.md)
-
----
  
 ## Quick Start  
 
@@ -48,8 +35,21 @@ Now, you are ready to run you program...
 ```bash
 build/your_project
 ```
-
 ---
+
+## Detailed Documentations
+
+[examples](docs/examples.md)
+---
+[src](docs/src.md)
+---
+[algo](docs/algo.md)
+---
+[data](docs/data.md)
+---
+[utils](docs/utils.md)
+---
+
 
 ## Contributions
 
@@ -57,7 +57,7 @@ Any contributions are welcome. Please make sure you test what your contributions
 
 - Feature Curves generation is on the roadmap of this project.
 - New learning algorithms are always welcome.
-- New sampling strategies can be useful for researchers.
+- New sampling strategies can be useful.
 
 ## Dependencies
 
