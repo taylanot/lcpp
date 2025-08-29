@@ -12,10 +12,15 @@ It provides a clean C++ header-only implementation, making it easy to integrate 
 ---
 
 ## Detailed Documentations
+
 [examples](docs/examples.md)
+---
 [src](docs/src.md)
+---
 [algo](docs/algo.md)
+---
 [data](docs/data.md)
+---
 [utils](docs/utils.md)
 
 ---
