@@ -1,0 +1,16 @@
+/**
+ * @file tests.h
+ * @author Ozgur Taylan Turan
+ *
+ */
+
+#ifndef TESTS_H
+#define TESTS_H
+
+#include "doctest.h"
+#include "test_data.h"
+#include "test_utils.h"
+#include "test_algo.h"
+#include "test_src.h"
+
+#endif
