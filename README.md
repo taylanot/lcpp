@@ -67,6 +67,13 @@ Any contributions are welcome. Please make sure you test what your contributions
 - [ensmallen 2.21.1>=](https://github.com/mlpack/ensmallen)  
 - [libcurl 7.81.0>=](https://curl.se/libcurl/)
 
-> **Note:** These libraries may have their own dependencies. Make sure they are properly installed before use.  
+> ** These libraries may have their own dependencies. Make sure they are properly installed before use.** 
 
+## Project History and Development
+
+This work has been developed since 2023 and was previously used in [Turan et al. (2025)](#turan2025) under the name *mlcxx*. The name has since changed from *mlcxx* to *lcpp*. While the majority of the code remains the same, improvements in usability have been made, and unused parts of the code have been removed.  
+
+### Reference
+<a id="turan2025"></a>  
+Turan, O. T., Tax, D. M. J., Viering, T. J., & Loog, M. (2025). *Learning learning curves*. Pattern Analysis and Applications, 28, 15. [https://doi.org/10.1007/s10044-024-01394-6](https://doi.org/10.1007/s10044-024-01394-6)
 
