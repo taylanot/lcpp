@@ -14,7 +14,7 @@ It provides a clean C++ header-only implementation, making it easy to integrate 
  
 ## Quick Start  
 
-Get started quickly with **lcpp**. You can install it locally:
+Get started quickly with **lcpp**. First, install the dependencies, then you can install lcpp locally:
 ```bash
 ./install.sh
 ```
