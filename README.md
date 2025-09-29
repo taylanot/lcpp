@@ -63,7 +63,7 @@ Any contributions are welcome. Please make sure you test what your contributions
 
 - [C++20>= ](https://en.cppreference.com/w/cpp/20.html)
 - [Armadillo 14.0.0>=](https://arma.sourceforge.net/docs.html)  
-- [mlpack 4.4.1>=](https://github.com/shivamshivanshu/mlpack/tree/master)  
+- [mlpack 4.4.1>=](https://github.com/mlpack/mlpack/tree/master)  
 - [ensmallen 2.21.1>=](https://github.com/mlpack/ensmallen)  
 - [libcurl 7.81.0>=](https://curl.se/libcurl/)
 
