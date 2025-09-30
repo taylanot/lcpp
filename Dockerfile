@@ -8,7 +8,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     git \
     make \
-    vim \
     g++ \
     libcurl4-openssl-dev \
     libmlpack-dev \
@@ -22,7 +21,7 @@ RUN git clone https://github.com/taylanot/lcpp.git
 
 # Move into the repo and run install.sh
 WORKDIR /workspace/lcpp
-RUN chmod +x install.sh && ./install.sh && cd .. && rm lcpp
+RUN ./install.sh && cd .. && rm -r lcpp
 
 # Go back to workspace as default
 WORKDIR /workspace

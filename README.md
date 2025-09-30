@@ -14,15 +14,12 @@ It provides a clean C++ header-only implementation, making it easy to integrate 
  
 ## Quick Start  
 
-Get started quickly with **lcpp**. First, install the dependencies, then you can install lcpp locally:
-```bash
-./install.sh
-```
-However, I highly recommend using the pre-built image with your preferred container platform. You can pull the pre-built image from Docker Hub:
+Use the pre-built image:
 ```bash
 singularity pull lcpp.sif docker://taylanot/lcpp
 ```
-Once installed, include lcpp in your program by adding the following at the top of your source file:
+
+Include **lcpp** in your program by adding the following at the top of your source file:
 ```cpp
 #include <lcpp.h>
 ```
@@ -31,10 +28,32 @@ You can build your project using the provided sample Makefile or your own. The s
 ```bash
 singularity lcpp.sif make your_project
 ```
+
 Now, you are ready to run you program...
 ```bash
 build/your_project
 ```
+
+You can also use the dockerfile to build your own image with docker or podman. Just run to build the image:
+```bash
+podman build -t lcpp .
+```
+
+After, creating your project you can compile your program:
+```bash
+podman run --rm -v "$(pwd)":/workspace -w /workspace lcpp make your_project
+```
+then, run it:
+```bash
+podman run --rm -v "$(pwd)":/workspace -w /workspace lcpp ./build/your_project
+```
+
+### Slow Start
+
+On Ubuntu 25 or later you can just use `apt install libmlpack-dev` and `apt install libcurl4-openssl-dev` to install all the dependencies. After cloning this repository and runing `./install.sh`, lcpp is at your disposal.
+
+Note: For previous versions of Ubuntu `libmlpack-dev` is not on the required version, hence you might need to follow the installation guides of [mlpack](https://github.com/mlpack/mlpack/tree/master).
+
 ---
 
 ## Detailed Documentations
@@ -62,9 +81,7 @@ Any contributions are welcome. Please make sure you test what your contributions
 ## Dependencies
 
 - [C++20>= ](https://en.cppreference.com/w/cpp/20.html)
-- [Armadillo 14.0.0>=](https://arma.sourceforge.net/docs.html)  
-- [mlpack 4.4.1>=](https://github.com/mlpack/mlpack/tree/master)  
-- [ensmallen 2.21.1>=](https://github.com/mlpack/ensmallen)  
+- [mlpack 4.4.0>=](https://github.com/mlpack/mlpack/tree/master)  
 - [libcurl 7.81.0>=](https://curl.se/libcurl/)
 
 > ** These libraries may have their own dependencies. Make sure they are properly installed before use.** 
