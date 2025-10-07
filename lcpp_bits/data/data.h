@@ -61,15 +61,15 @@ public:
         std::is_same<D, data::Dataset<arma::Mat<DTYPE>>>::value ||
         std::is_same<D, data::oml::Dataset<DTYPE>>::value )
     {
-      WARNING("Unfortunately I will not let you transform the labels if you \
-          donot have a regression dataset!");
-      return dataset; 
+      D tdataset = dataset;
+      lab_.Transform( dataset.labels_, tdataset.labels_);
+      return tdataset; 
     }
     else
     {
-      D tdataset = dataset;
-      lab_.Transform( dataset.labels_, tdataset.labels_);
-      return tdataset;
+      WARNING("Unfortunately I will not let you transform the labels if you \
+          donot have a regression dataset!");
+      return dataset; 
     }
   };
 
