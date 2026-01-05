@@ -95,6 +95,6 @@ This work has been developed since 2023 and was previously used in [Turan et al.
 Turan, O. T., Tax, D. M. J., Viering, T. J., & Loog, M. (2025). *Learning learning curves*. Pattern Analysis and Applications, 28, 15. [https://doi.org/10.1007/s10044-024-01394-6](https://doi.org/10.1007/s10044-024-01394-6)
 
 <a id="turan2026"></a>
-Turan, O. T., Loog, M., & Tax, D. M. J. (2026). *Generalization Performance Distributions Along Learning Curves*. Pattern Recognition Letters. [https://doi.org/10.1016/j.patrec.2026.01.003] (https://doi.org/10.1016/j.patrec.2026.01.003)
+Turan, O. T., Loog, M., & Tax, D. M. J. (2026). *Generalization Performance Distributions Along Learning Curves*. Pattern Recognition Letters. [https://doi.org/10.1016/j.patrec.2026.01.003](https://doi.org/10.1016/j.patrec.2026.01.003)
 
 
