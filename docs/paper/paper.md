@@ -41,7 +41,7 @@ To empower the machine learning community to generate richer, more detailed lear
 
 LCPP also includes a simple dataset container for access to OpenML datasets [@openml], with built-in support for complete dataset transformations and train/test splits, allowing users to directly measure the generalization performance of models available in mlpack and some other learning algorithms included in itself, such as kernel ridge regression, discriminant classifiers, multi-class classification extensions of binary classifiers. 
 
-Designed for easy deployment on high-performance computing (HPC) environments, LCPP can efficiently run large-scale experiments in parallel, ensuring reproducibility and scalability. This combination of features has already been demonstrated in [@turan2025] and [@turan2025b], where large-scale learning curve databases are generated.
+Designed for easy deployment on high-performance computing (HPC) environments, LCPP can efficiently run large-scale experiments in parallel, ensuring reproducibility and scalability. This combination of features has already been demonstrated in [@turan2025] and [@turan2026], where large-scale learning curve databases are generated.
 
 By capturing generalization performance across many learners and tasks, LCPP facilitates systematic benchmarking, fair algorithm comparisons, and meta-analysis for understanding broader patterns in learning behaviors of machine learning models. 
 
