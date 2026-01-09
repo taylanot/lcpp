@@ -22,7 +22,7 @@ authors:
 affiliations:
  - name: Delft University of Technology, The Netherlands
    index: 1
-date: 27 September 2025
+date: 09 January 2026
 bibliography: ref.bib
 --- 
 # Summary
@@ -37,13 +37,23 @@ Learning curve databases are valuable for **model selection** and for **estimati
 
 Generally, creating learning curves is computationally expensive because it requires repeatedly training algorithms on many subsets of varying training sizes. Consequently, learning curves are often computed for a limited number of training set sizes. For example, while creating learning curve databases [@mohr2023] and [@yan2025] limited number of training set-sizes are investigated, moreover, these generations are done only for fixed learners without hyper-parameter tuning.
 
-To empower the machine learning community to generate richer, more detailed learning curves, we propose LCPP, a C++ library for scalable learning curve generation. LCPP offers several features; first several approaches for splitting a given dataset into training and test sets of varying sizes (where training sets can be drawn randomly or incrementally, where test sets can be fixed or vary in size). Next, unlike most existing tools that fix hyper-parameters during learning curve creation, LCPP integrates hyperparameter optimization routines from mlpack, enabling more realistic and optimized learner evaluations. 
+To empower the machine learning community to generate richer, more detailed learning curves, we propose LCPP, a C++ library for scalable learning curve generation. LCPP offers several features; first several approaches for splitting a given dataset into training and test sets of varying sizes (where training sets can be drawn randomly or incrementally, where test sets can be fixed or vary in size). Next, unlike most existing tools that fix hyper-parameters during learning curve creation, LCPP integrates hyperparameter optimization routines from mlpack [@mlpack2023], enabling optimized learner evaluations. 
 
-LCPP also includes a simple dataset container for access to OpenML datasets [@openml], with built-in support for complete dataset transformations and train/test splits, allowing users to directly measure the generalization performance of models available in mlpack and some other learning algorithms included in itself, such as kernel ridge regression, discriminant classifiers, multi-class classification extensions of binary classifiers. 
+LCPP also includes a simple dataset container for access to OpenML datasets [@openml], with built-in support for complete dataset transformations and train/test splits, allowing users to directly measure the generalization performance of models available in mlpack [@mlpack2023] and some other learning algorithms included in itself, such as kernel ridge regression, discriminant classifiers, multi-class classification extensions of binary classifiers. 
 
-Designed for easy deployment on high-performance computing (HPC) environments, LCPP can efficiently run large-scale experiments in parallel, ensuring reproducibility and scalability. This combination of features has already been demonstrated in [@turan2025] and [@turan2026], where large-scale learning curve databases are generated.
+# Software Design
 
-By capturing generalization performance across many learners and tasks, LCPP facilitates systematic benchmarking, fair algorithm comparisons, and meta-analysis for understanding broader patterns in learning behaviors of machine learning models. 
+LCPP is designed for easy deployment on high-performance computing (HPC) environments. With little effort it can efficiently run large-scale experiments in parallel, ensuring reproducibility and scalability. Moreover, it supports easy and light-weight check-pointing, allowing high-fidelity (both in terms of the training set size resolution and also the times the training set is resampled) learning curves to be created in multiple sessions. This structure also enables the missing experiments to be investigated easily. 
+
+It is also designed with future-proofing in mind. Adoption of the mlpack [@mlpack2023] conventions LCPP has access to wide range of learning algorithm access. As mlpack [@mlpack2023] continues to expand the number of supported models will also increases. In addition, LCPP is not restricted by this, any model that is using the same conventions as mlpack [@mlpack2023] and relies on armadillo [@arma2016] and ensmallen [@ensmallen2018] can also be used without an effort. 
+
+# Research Impact Statement
+
+LCPP is used in [@turan2025] and [@turan2026] to generate large-scale learning curve databases by considering many degrees of freedom involved in this process. By enabling tracking of the generalization performance across machine learning models, LCPP facilitates a systematic learning curve creation with a fast development and deployment cycle. We hope that it serves as a foundation for future learning curve research.
+
+# AI Usage Disclosure
+
+We did not use AI for the development of this software and the writing.
 
 # References
 
