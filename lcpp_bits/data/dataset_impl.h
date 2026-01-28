@@ -253,7 +253,10 @@ bool Dataset<LTYPE,T>::_download( )
     LOG(down_url_.c_str());
     curl_easy_setopt(curl, CURLOPT_URL, down_url_.c_str());
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
-
+    // There is redirecting need in openml side
+    curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+    // Let's not stay in a never ending loop
+    curl_easy_setopt(curl, CURLOPT_MAXREDIRS, 5L);
     // Perform the request
     res = curl_easy_perform(curl);
 
