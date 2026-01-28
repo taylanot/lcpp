@@ -26,7 +26,7 @@ Include **lcpp** in your program by adding the following at the top of your sour
 
 You can build your project using the provided sample Makefile or your own. The sample Makefile will create a build directory and place your executable there:
 ```bash
-singularity lcpp.sif make your_project
+singularity run lcpp.sif make your_project
 ```
 
 Now, you are ready to run you program...
