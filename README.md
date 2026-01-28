@@ -66,7 +66,7 @@ Note: For previous versions of Ubuntu `libmlpack-dev` is not on the required ver
 ---
 [data](docs/data.md)
 ---
-[utils](docs/utils.md)
+[utils](docs/util.md)
 ---
 
 
