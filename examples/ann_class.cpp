@@ -38,7 +38,7 @@ int main ( )
   network.Add<mlpack::ReLU>();
   network.Add<mlpack::Linear>(5);
   network.Add<mlpack::ReLU>();
-  network.Add<mlpack::Linear>(trainset.num_class_);
+  network.Add<mlpack::Linear>(trainset.num_class_.value());
   network.Add<mlpack::Softmax>();
 
   // Initialize the model with inputs, and labels 
