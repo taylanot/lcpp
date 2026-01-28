@@ -11,7 +11,7 @@ Here the dataset containers can be found under the `data` namespace. The label t
 ```cpp
 ...
     data::Dataset<arma::Row<double>> regdataset(2) // Creates a 2D regression dataset
-    data::Dataset<arma::<Mat<double>> regdataset2(3) // Creates a 3D regression dataset with multi-dimensional output
+    data::Dataset<arma::Mat<double>> regdataset2(3) // Creates a 3D regression dataset with multi-dimensional output
     data::Dataset<arma::Row<size_t>> classdataset(2,3) // Creates a 2D 3-class classification dataset
 ...
 ```
