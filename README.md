@@ -77,6 +77,7 @@ Any contributions are welcome. Please make sure you test what your contributions
 - Feature Curves generation is on the roadmap of this project.
 - New learning algorithms are always welcome.
 - New sampling strategies can be useful.
+- Migration to `cmake` from `make` similar to what is done in `mlpack`.
 
 ## Dependencies
 
