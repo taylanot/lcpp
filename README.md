@@ -34,7 +34,7 @@ Now, you are ready to run you program...
 build/your_project
 ```
 
-You can also use the dockerfile to build your own image with docker or podman. Just run to build the image:
+You can also use the Dockerfile to build your own image with docker or podman. Just run to build the image:
 ```bash
 podman build -t lcpp .
 ```
@@ -50,7 +50,7 @@ podman run --rm -v "$(pwd)":/workspace -w /workspace lcpp ./build/your_project
 
 ### Slow Start
 
-On Ubuntu 25 or later you can just use `apt install libmlpack-dev` and `apt install libcurl4-openssl-dev` to install all the dependencies. After cloning this repository and runing `./install.sh`, lcpp is at your disposal.
+On Ubuntu 25 or later you can just use `apt install libmlpack-dev` and `apt install libcurl4-openssl-dev` to install all the dependencies. After cloning this repository and running `./install.sh`, lcpp is at your disposal.
 
 Note: For previous versions of Ubuntu `libmlpack-dev` is not on the required version, hence you might need to follow the installation guides of [mlpack](https://github.com/mlpack/mlpack/tree/master).
 
@@ -72,7 +72,7 @@ Note: For previous versions of Ubuntu `libmlpack-dev` is not on the required ver
 
 ## Contributions
 
-Any contributions are welcome. Please make sure you test what your contributions in the related test files.
+Any contributions are welcome. Please make sure you test your contributions in the related test files.
 
 - Feature Curves generation is on the roadmap of this project.
 - New learning algorithms are always welcome.
