@@ -33,7 +33,7 @@ Learning curve databases are valuable for **model selection** and for **estimati
 
 **LCPP (Learning Curve Plus Plus)** is a C++ library that allows for learning curve creation of machine learning models. `LCPP` enables its users to obtain learning curves for variety of learners on any supervised learning dataset with/out hyper-parameter tuning, enabling  model selection and training data requirement determination.
 
-# Statement of need
+# Statement of Need
 
 Generally, creating learning curves is computationally expensive because it requires repeatedly training algorithms on many subsets of varying training sizes. Consequently, learning curves are often computed for a limited number of training set sizes. For example, while creating learning curve databases [@mohr2023] and [@yan2025] limited number of training set-sizes are investigated, moreover, these generations are done only for fixed learners without hyper-parameter tuning.
 
@@ -41,7 +41,7 @@ To empower the machine learning community to generate richer, more detailed lear
 
 `LCPP` also includes a simple dataset container for access to `OpenML` datasets [@openml], with built-in support for complete dataset transformations and train/test splits, allowing users to directly measure the generalization performance of models available in `mlpack` [@mlpack2023] and some other learning algorithms included in itself, such as kernel ridge regression, discriminant classifiers, multi-class classification extensions of binary classifiers. 
 
-# State of the field 
+# State of the Field 
 
 Several tools are available in the Python ecosystem for learning curve generation. `scikit-learn` [@scikit] provides a flexible interface for constructing learning curves, allowing cross-validation strategies to be combined with a learner. However, its extensibility and suitability for constructing high-fidelity learning curves remain limited. `LCDB 1.0 and 1.1` [@yan2025], [@mohr2023] primarily serve as wrappers around existing learning curve databases. While learning curve generation is possible, it requires additional modification of the provided scripts and is not a central design focus.
 
@@ -60,6 +60,10 @@ It is also designed with future-proofing in mind. Adoption of the `mlpack` [@mlp
 # AI Usage Disclosure
 
 We did not use AI for the development of this software and the writing.
+
+# Acknowledgements 
+
+We thank Marco Loog, and Tom Viering for discussions and collaborations that helped shape the broader context of this work, and Gijs van Tulder for his help with documentation and rebasing the repository.
 
 # References
 
