@@ -1,0 +1,55 @@
+name: Docker Build and Test LCPP
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: |
+        docker build -t lcpp:test .
+
+    - name: Run tests inside Docker
+      run: |
+        docker run --rm \
+          -v ${{ github.workspace }}:/workspace \
+          -w /workspace \
+          lcpp:test \
+          /bin/bash -c "
+            set -e
+            echo '--- Running make test ---'
+            if make test; then
+              echo 'make test succeeded'
+            else
+              echo 'make test failed'
+              exit 1
+            fi
+
+            if [ -f ./build/test ]; then
+              echo '--- Running ./build/test ---'
+              if ./build/test; then
+                echo './build/test succeeded'
+              else
+                echo './build/test failed'
+                exit 1
+              fi
+            else
+              echo 'No ./build/test found, compiling test.cpp...'
+              if g++ -std=c++23 -Wall -O2 test.cpp -o test_run && ./test_run; then
+                echo 'test.cpp ran successfully'
+              else
+                echo 'test.cpp failed'
+                exit 1
+              fi
+            fi
+
+            echo 'All tests passed'
+          "

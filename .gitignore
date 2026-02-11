@@ -6,6 +6,9 @@
 *.arff
 # HIDDEN DIRS
 .*
+# But keep these
+!.gitignore
+!.github/
 # Compiled Object files
 *.slo
 *.lo
