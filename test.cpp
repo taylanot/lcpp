@@ -37,14 +37,13 @@ int main ( int argc, char** argv )
 
   int res = context.run(); 
 
-  if(context.shouldExit()) 
-      return res;          
- 
   PRINT_SEED(SEED);
 
   PRINT_TIME(timer.toc());
 
   DEPEND_INFO();
-  
-  return 0; 
+
+  return res;          
+ 
+   
 }
