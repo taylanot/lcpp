@@ -68,6 +68,8 @@ Note: For previous versions of Ubuntu `libmlpack-dev` is not on the required ver
 ---
 [utils](docs/util.md)
 ---
+[tests](docs/test.md)
+---
 
 
 ## Contributions
