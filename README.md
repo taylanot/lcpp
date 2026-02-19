@@ -58,18 +58,7 @@ Note: For previous versions of Ubuntu `libmlpack-dev` is not on the required ver
 
 ## Detailed Documentations
 
-[examples](docs/examples.md)
----
-[src](docs/src.md)
----
-[algo](docs/algo.md)
----
-[data](docs/data.md)
----
-[utils](docs/util.md)
----
-[tests](docs/test.md)
----
+For more information visit <https://taylanot.github.io/lcpp/>.
 
 
 ## Contributions
