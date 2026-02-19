@@ -1,0 +1,85 @@
+#---------------------------------------------------------------------------
+# Project-related configuration
+#---------------------------------------------------------------------------
+PROJECT_NAME           = "Learning Curve Plus Plus (LCPP)"
+USE_MDFILE_AS_MAINPAGE = README.md
+OUTPUT_DIRECTORY       = .       # where HTML docs will be generated
+IMAGE_PATH             = docs/figures
+CREATE_SUBDIRS         = NO
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+OUTPUT_LANGUAGE        = English
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ALWAYS_DETAILED_SEC    = NO
+INLINE_INHERITED_MEMB  = NO
+
+#---------------------------------------------------------------------------
+# Input files
+#---------------------------------------------------------------------------
+INPUT                  = . docs
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.hpp *.cpp *.md
+EXCLUDE                = examples tests
+EXCLUDE_PATTERNS       = */test.cpp */main.cpp
+
+#---------------------------------------------------------------------------
+# Main page
+#---------------------------------------------------------------------------
+USE_MDFILE_AS_MAINPAGE = docs/mainpage.md
+
+#---------------------------------------------------------------------------
+# Build options
+#---------------------------------------------------------------------------
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = .
+
+#---------------------------------------------------------------------------
+# Markdown and linking
+#---------------------------------------------------------------------------
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+EXTENSION_MAPPING      = md=Markdown
+TAB_SIZE               = 4
+
+#---------------------------------------------------------------------------
+# Diagrams
+#---------------------------------------------------------------------------
+HAVE_DOT               = YES
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg
+DOT_PATH               = 
+DOTFILE_DIRS           = 
+
+#---------------------------------------------------------------------------
+# HTML options
+#---------------------------------------------------------------------------
+HTML_OUTPUT            = html
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_DYNAMIC_SECTIONS  = YES
+HTML_EXTRA_STYLESHEET  = 
+
+#---------------------------------------------------------------------------
+# Source browsing
+#---------------------------------------------------------------------------
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+#---------------------------------------------------------------------------
+# Preprocessor
+#---------------------------------------------------------------------------
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+
