@@ -21,7 +21,7 @@ INPUT                  = . docs
 RECURSIVE              = YES
 FILE_PATTERNS          = *.h *.hpp *.cpp *.md
 EXCLUDE                = examples tests
-EXCLUDE_PATTERNS       = */test.cpp */main.cpp
+EXCLUDE_PATTERNS       = */test.cpp */main.cpp */README.md
 
 #---------------------------------------------------------------------------
 # Main page
