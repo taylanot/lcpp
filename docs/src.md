@@ -1,3 +1,5 @@
+\page src src
+
 # src
 
 This is the main application of this project. It provides a scalable and reproducible way of obtaining the generalization performance of machine learning models with respect to the provided training set size.

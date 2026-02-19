@@ -1,3 +1,5 @@
+\page algo algo
+
 # algo
 
 This directory contains implementations of machine learning algorithms organized into two main categories: **regressors** and **classifiers**. Additionally, it provides a **neural network wrapper** that offers a unified interface for deep learning models, simplifying the use of *mlpack* neural networks.  

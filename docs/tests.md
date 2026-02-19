@@ -1,3 +1,4 @@
+\page tests tests
 # tests
 
 This directory contains all **unit tests** for the project. Tests are organized by module and executed through a single **test driver** located at `test.cpp`. The project uses the **doctest** framework, which is included in this directory as `doctest.h` [1].

@@ -1,3 +1,5 @@
+\page data data
+
 # data
 
 This directory contains implementations of dataset containers, an [OpenML](https://www.openml.org/) connection, data sampling, manipulation, and transformation strategies. It also includes minor helpers for saving and loading that wrap *mlpack* functions, a `Gram` class for computing approximate or exact Gram matrices, and a reporting function for the dataset container of *LCPP*, which prints statistical information about the inputs and labels of the given dataset. Also, there is a wrapper for transforming these dataset containers with *mlpack* scaling and transformation functionality, for both inputs and labels.
